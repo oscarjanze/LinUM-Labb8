@@ -5,7 +5,12 @@ int main(int argc, char **argv)
 {
  QApplication app (argc, argv);
 
- QPushButton button ("Hello world !");
+ QPushButton button;
+ button.setText("Hello world !");
+ QFont font ("Times");
+ button.setFont(font);
+ button.setToolTip("Linux VT-22");
+
  button.show();
 
  return app.exec();
