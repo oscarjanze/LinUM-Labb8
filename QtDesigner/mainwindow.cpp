@@ -31,7 +31,7 @@ void MainWindow::on_pushButton_3_clicked()
 
 void MainWindow::on_pushButton_clicked()
 {
-    if (ui->spinBox->value() == 255)
+    if (ui->spinBox->value() == 255 || ui->spinBox_2->value() == 255 || ui->spinBox_3->value() == 255)
     {
         QMessageBox msgBox;
         msgBox.setText("Maximum value reached!!");
@@ -43,7 +43,7 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
-    if (ui->spinBox->value() < 1)
+    if (ui->spinBox->value() < 1 || ui->spinBox_2->value() < 1 || ui->spinBox_3->value() < 1)
     {
         QMessageBox msgBox;
         msgBox.setText("Minimum value reached!!");
